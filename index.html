@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Live Preview js project</title>
+</head>
+
+<body>
+
+    <div class="main-site-wrapper">
+        <div class="container">
+            <div class="right-side">
+                <div class="main-title">
+                    <label>Enter Title</label>
+                    <input type="text" id="title-input">
+                </div>
+
+                <div class="main-desc">
+                    <label>Enter Description</label>
+                    <textarea name="desc" id="desc-input" cols="25" rows="7"></textarea>
+                </div>
+
+                <div class="bgColor-picker">
+                    <label>Select Backgound</label>
+                    <input type="checkbox" id="bg-color" onclick="toggleColor()">Color
+                    <div class="bgColor-select">
+                        <input type="color" id="color-picker">
+                    </div>
+                    <input type="checkbox" id="bg-image" onclick="toggleImage()">Image
+                    <div class="bgImage-select">
+                        <input type="file"  accept="image/*" id="image-picker">
+                    </div>
+                </div>
+
+                <div class="fontColor-picker">
+                    <label>Select Font Color</label>
+                    <input type="color" id="font-color">
+                </div>
+
+                <form>
+                    <div class="form-group">
+                        <div class="name-input">
+                            <input type="checkbox" id="Name-checkbox" name="comment-checkbox">
+                            <label for="comment-checkbox">Name</label>
+                        </div>
+                        <div class="mail-input">
+                            <input type="checkbox" id="Email-checkbox" name="comment-checkbox">
+                            <label for="comment-checkbox">E-mail</label>
+                        </div>
+                        <div class="number-input">
+                            <input type="checkbox" id="mobile-checkbox" name="comment-checkbox">
+                            <label for="comment-checkbox">Mo-Number</label>
+                        </div>
+                        <div class="comment-input">
+                            <input type="checkbox" id="comment-checkbox" name="comment-checkbox">
+                            <label for="comment-checkbox">Comment</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="left-side">
+                <h1 class="live-text">Live Preveiw</h1>
+                <h2 id="title-preview"></h2>
+                <p id="desc-preview"></p>
+                <input class="input-name" type="text" placeholder="Enter Name" id="name-input">
+                <input class="input-name" type="email" placeholder="Enter Email" id="email-input">
+                <input class="input-name" type="number" placeholder="Enter Mobile Number" id="number-input">
+                <textarea class="input-name" type="number" placeholder="Add Comment" rows="10" cols="50"
+                    id="comment-input"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
